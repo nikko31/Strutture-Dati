@@ -1,0 +1,17 @@
+/* 
+ * File:   main.c
+ * Author: nikko31
+ *
+ * Created on May 30, 2014, 11:22 PM
+ */
+
+#include "strutture.h"
+
+/*
+ * 
+ */
+int main(int argc, char** argv) {
+    
+    return 0;
+}
+
