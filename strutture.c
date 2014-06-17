@@ -6,59 +6,51 @@
  */
 
 #include "strutture.h"
-//-------->PRIMITIVE------------------>
+/*--------PRIMITIVE------------------*/
 
-list emptylist() 
-{
-    return NULL;
+list emptylist() {
+return NULL;
 }
-
-boolean empty(list l) 
-{
+boolean empty(list l) {
     return (l==NULL);
 }
-
-Element head(list l) 
-{
-    if (empty(l)) 
-        abort();
+element head(list l) {
+    if (empty(l)) abort();
+    else
     return l->value;
 }
-
-list tail(list l) 
-{
+list tail(list l) {
     if (empty(l)) abort();
     else
     return l->next;
 }
-
-list cons(Element e, list l) 
-{
+list cons(element e, list l) {
     list t;
     t = (list) malloc(sizeof(item));
     t->value=copy(e);
     t->next=l;
     return t;
 }
-//--------------------------->
-Element copy(Element e)
+
+//---------------------------
+element copy(element e)
 {
-    Element el;
+    element el;
     el=e;
     return el;  
 }
 
-boolean isEqual(Element e1,Element e2) 
+boolean isEqual(element e1,element e2) 
 {
     return (e1 == e2);
 }
 
-boolean isLess(Element e1, Element e2)
+boolean isLess(element e1, element e2)
 {
 return (e1 < e2);
 }
 
-void printElement(Element el)
+void printelement(element el)
 {
     printf("%d", el);
 }
@@ -67,7 +59,7 @@ void showlist(list l)
 {
     printf("[");
     while (!empty(l)) {
-    printElement(head(l));
+    printelement(head(l));
     l = tail(l);
     if (!empty(l)) printf(", ");
     }
