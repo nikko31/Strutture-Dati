@@ -20,8 +20,8 @@ boolean empty(list l)
 
 Element head(list l) 
 {
-    if (empty(l)) abort();
-    else
+    if (empty(l)) 
+        abort();
     return l->value;
 }
 
