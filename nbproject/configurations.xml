@@ -14,6 +14,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>main.c</itemPath>
+      <itemPath>strutture.c</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -39,6 +40,8 @@
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
       </item>
+      <item path="strutture.c" ex="false" tool="0" flavor2="0">
+      </item>
       <item path="strutture.h" ex="false" tool="3" flavor2="0">
       </item>
     </conf>
@@ -63,6 +66,8 @@
         </asmTool>
       </compileType>
       <item path="main.c" ex="false" tool="0" flavor2="0">
+      </item>
+      <item path="strutture.c" ex="false" tool="0" flavor2="0">
       </item>
       <item path="strutture.h" ex="false" tool="3" flavor2="0">
       </item>

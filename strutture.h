@@ -28,7 +28,7 @@ extern boolean empty(list);/* Restituisce TRUE se l e` la lista vuota, FALSE alt
 extern Element head(list);
 extern list tail(list);
 extern list cons(Element, list);
-//--------------------->
+//-------------------->
 extern Element copy(Element e);
 extern boolean isEqual(Element e1,Element e2);
 extern boolean isLess(Element e1, Element e2);
