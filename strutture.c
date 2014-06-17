@@ -47,11 +47,29 @@ Element copy(Element e)
     el=e;
     return el;  
 }
+
 boolean isEqual(Element e1,Element e2) 
 {
     return (e1 == e2);
 }
+
 boolean isLess(Element e1, Element e2)
 {
 return (e1 < e2);
+}
+
+void printElement(Element el)
+{
+    printf("%d", el);
+}
+
+void showlist(list l)    
+{
+    printf("[");
+    while (!empty(l)) {
+    printElement(head(l));
+    l = tail(l);
+    if (!empty(l)) printf(", ");
+    }
+    printf("]\n");
 }
