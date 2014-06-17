@@ -10,7 +10,15 @@
  *  
  */
 int main(int argc, char** argv) {
-    cons(1,emptylist());
-    return 0;//
+    list l1 = emptylist();
+    int el;
+    do {
+        printf("\n Introdurre valore:\t");
+        el=getElement();
+        l1 = insord2(el, l1);
+    } while (el!=0); /* condiz. arbitraria */
+    showlist(l1);
+    getchar();
+    return 0;
 }
 
